@@ -2,18 +2,46 @@
   display: flex;
 }
 .side-bar {
-  background-color: darkslateblue;
+  background-color: rgb(16, 9, 63);
   width: 300px;
   height: 100vh;
 }
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
+  background-color: #0a182b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-topic a {
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
 }
 .topics {
-  background-color: darkgrey;
+  background-color: rgb(3, 19, 28);
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.topic {
+  padding: 20px 0 40px;
+}
+
+.topic-name a {
+  text-decoration: none;
+  color: white;
 }
 .main {
   background-color: #FFFFFF;
