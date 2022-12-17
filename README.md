@@ -26,8 +26,7 @@ ToDoリストで投稿したアイテムを並び替えることで、アイテ�
 項目の関連性をいちいち見直さないといけなく、管理しづらかった為、開発を決めた。
 
 # 洗い出した要件
-要件を定義したシート
-https://docs.google.com/spreadsheets/d/1RjEaaToBftxu9LI8wmmkix5x6j5-KBM_oRrOaJS_fKA/edit#gid=982722306
+[要件を定義したシート](https://docs.google.com/spreadsheets/d/1RjEaaToBftxu9LI8wmmkix5x6j5-KBM_oRrOaJS_fKA/edit#gid=982722306)
 
 # 実装した機能についての画像やGIFおよびその説明※
 
@@ -88,7 +87,12 @@ https://docs.google.com/spreadsheets/d/1RjEaaToBftxu9LI8wmmkix5x6j5-KBM_oRrOaJS_
 
 
 
+![brain.png](./brain.png)
+
 # 画面遷移図
+
+
+![brain2.png](./brain2.png)
 
 
 # 開発環境
@@ -101,10 +105,15 @@ https://docs.google.com/spreadsheets/d/1RjEaaToBftxu9LI8wmmkix5x6j5-KBM_oRrOaJS_
 
 # ローカルでの動作方法
 以下のコマンドを順に実行
- % git clone https://github.com/hama-hiroki/brain-storming
- % cd xxxxx
- % bundle install
- % yarn install
+
+
+% git clone https://github.com/hama-hiroki/brain-storming
+
+% cd xxxxx
+
+% bundle install
+
+% yarn install
 
 # 工夫したポイント
 ToDoリストを並び替えて関連づけをする機能は、あくまでアプリ作成の骨組みで、これを主婦向けの献立・買い物リストアプリにしたり、ビジネス優先順位整理アプリにしたり、汎用性のあるものになると考えている。
