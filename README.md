@@ -26,8 +26,7 @@ ToDoリストで投稿したアイテムを並び替えることで、アイテ�
 項目の関連性をいちいち見直さないといけなく、管理しづらかった為、開発を決めた。
 
 # 洗い出した要件
-要件を定義したシート
-https://docs.google.com/spreadsheets/d/1RjEaaToBftxu9LI8wmmkix5x6j5-KBM_oRrOaJS_fKA/edit#gid=982722306
+[要件を定義したシート](https://docs.google.com/spreadsheets/d/1RjEaaToBftxu9LI8wmmkix5x6j5-KBM_oRrOaJS_fKA/edit#gid=982722306)
 
 # 実装した機能についての画像やGIFおよびその説明※
 
@@ -86,6 +85,7 @@ https://docs.google.com/spreadsheets/d/1RjEaaToBftxu9LI8wmmkix5x6j5-KBM_oRrOaJS_
 - belongs_to :item
 
 
+
 # 画面遷移図
 
 
@@ -100,8 +100,11 @@ https://docs.google.com/spreadsheets/d/1RjEaaToBftxu9LI8wmmkix5x6j5-KBM_oRrOaJS_
 # ローカルでの動作方法
 以下のコマンドを順に実行
 % git clone https://github.com/hama-hiroki/brain-storming
+
 % cd xxxxx
+
 % bundle install
+
 % yarn install
 
 # 工夫したポイント
