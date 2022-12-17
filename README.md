@@ -99,6 +99,7 @@ ToDoリストで投稿したアイテムを並び替えることで、アイテ�
 
 # ローカルでの動作方法
 以下のコマンドを順に実行
+
 % git clone https://github.com/hama-hiroki/brain-storming
 
 % cd xxxxx
