@@ -86,6 +86,8 @@ https://docs.google.com/spreadsheets/d/1RjEaaToBftxu9LI8wmmkix5x6j5-KBM_oRrOaJS_
 - belongs_to :item
 
 
+
+
 # 画面遷移図
 
 
@@ -99,12 +101,10 @@ https://docs.google.com/spreadsheets/d/1RjEaaToBftxu9LI8wmmkix5x6j5-KBM_oRrOaJS_
 
 # ローカルでの動作方法
 以下のコマンドを順に実行
-% git clone https://github.com/hama-hiroki/brain-storming
-% cd xxxxx
-% bundle install
-% yarn install
+ % git clone https://github.com/hama-hiroki/brain-storming
+ % cd xxxxx
+ % bundle install
+ % yarn install
 
 # 工夫したポイント
-ToDoリストを並び替えて関連づけをする機能は、あくまでアプリ作成の骨組みで、
-これを主婦向けの献立・買い物リストアプリにしたり、ビジネス優先順位整理アプリにしたり、
-汎用性のあるものになると考えている。
+ToDoリストを並び替えて関連づけをする機能は、あくまでアプリ作成の骨組みで、これを主婦向けの献立・買い物リストアプリにしたり、ビジネス優先順位整理アプリにしたり、汎用性のあるものになると考えている。
