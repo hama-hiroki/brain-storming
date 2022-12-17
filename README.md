@@ -1,14 +1,24 @@
+## アプリケーション名
+Brain Storming
+
+## アプリケーション概要
+
+
+
+
+
+
 ## users テーブル
 
-| Column           　　　  | Type   | Options                   |
+| Column               | Type   | Options                   |
 | ——————————— | ------ | ------------------------- |
-| email             　　　　 | string | null: false, unique: true |
+| email              | string | null: false, unique: true |
 | encrypted_password | string | null: false               |
-| last_name       　  　   | string | null: false               |
-| first_name      　　      | string | null: false               |
+| last_name         | string | null: false               |
+| first_name           | string | null: false               |
 
 ### Association
- has_many :Topics
+- has_many :Topics
 
 
 ## Topics テーブル
@@ -19,9 +29,9 @@
 | topic_item                    | string         | null: false                    |
 
 ### Association
-belongs_to :user
-has_many   :items
-has_many   :sub_items
+- belongs_to :user
+- has_many   :items
+- has_many   :sub_items
 
 
 ## items テーブル
@@ -32,8 +42,8 @@ has_many   :sub_items
 | item              | string         | null: false                    |
 
 ### Association
-belongs_to :topic
-has_many   :sub_items
+- belongs_to :topic
+- has_many   :sub_items
 
 
 ## sub_items テーブル
@@ -45,6 +55,6 @@ has_many   :sub_items
 | sub_item      | string         | null: false                    |
 
 ### Association
-belongs_to :topic
-belongs_to :item
+- belongs_to :topic
+- belongs_to :item
 
