@@ -5,7 +5,7 @@
   <div class="create-topic">
       <%=form_with model: @topic, local: true do |f|%>
       <div class='create-topic-form_label'>
-        <%= f.text_field :topic, class: 'create-topic-form_input', placeholder: 'トピックを作成する'%>
+        <%= f.text_field :topic_item, class: 'create-topic-form_input', placeholder: 'トピックを作成する'%>
       </div>
         <%= f.submit class: 'create-topic__action-btn'%>    
       <% end %>
