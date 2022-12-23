@@ -54,4 +54,5 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  password: <%= ENV['BRAIN_STORMING_DATABASE_PASSWORD'] %>
+　　 url: <%= ENV['DATABASE_URL'] %>
+
