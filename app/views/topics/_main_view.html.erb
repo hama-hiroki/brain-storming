@@ -5,9 +5,11 @@
     </div>
   </div>
   <div class="right-header">
+  <% if user_signed_in? %>
     <div class="header-button">
     <%= link_to "BMを終了する", destroy_user_session_path, method: :delete %>
     </div>
+    <% end %>
   </div>
 </div>
 

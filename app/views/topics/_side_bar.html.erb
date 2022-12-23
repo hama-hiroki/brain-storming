@@ -1,21 +1,19 @@
 <div class="side-bar-header">
-<div class="header-name">
+  <div class="header-name">
    <%= link_to current_user.first_name %>
   </div>
   <div class="create-topic">
-    <a href="#">トピックを作成する</a>
-  </div>
+      <%=form_with url: "/topics", method: :post, local: true do |f|%>
+      <div class='create-topic-form_label'>
+        <%= f.text_field :topic_item, class: 'create-topic-form_input', placeholder: 'トピックを作成する'%>
+      </div>
+        <%= f.submit '作成する', class: 'create-topic__action-btn'%>    
+      <% end %>
+   </div>
 </div>
 
-<div class="topics">
- <div class="topic">
+  <div class="topics">
     <div class="topic-name">
-      <a href="#">銀行に行く</a>
-    </div>
-  </div>
-  <div class="topic">
-    <div class="topic-name">
-      <a href="#">オリーブオイルを購入する</a>
-    </div>
-  </div>
+      <p><%=  %></p>
+      </div>
 </div>

@@ -39,7 +39,7 @@ https://brain-storming.onrender.com/
 
 | Column                  | Type          | Options                        |
 | -------------------     | --------      | ------------------------------ |
-| email                   | string        | null: false, unipue: true |
+| email                   | string        | null: false, unique: true |
 | encrypted_password      | string        | null: false                    |
 | last_name               | string        | null: false                    |
 | first_name              | string        | null: false                    |

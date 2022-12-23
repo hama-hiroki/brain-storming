@@ -13,7 +13,6 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   
-
 development:
   <<: *default
   adapter: mysql2
@@ -55,4 +54,5 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  url: <%= ENV['DATABASE_URL'] %>
+　　 url: <%= ENV['DATABASE_URL'] %>
+
