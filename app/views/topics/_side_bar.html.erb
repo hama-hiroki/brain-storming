@@ -12,8 +12,25 @@
    </div>
 </div>
 
-  <div class="topics">
-    <div class="topic-name">
-      <p><%=  %></p>
-      </div>
+<div class="topics">
+<% @topics.each do |topic| %>
+<div class="topic">
+  <div class="topic-name">
+      <p><%= topic.topic_item %></p>
+  </div>
+   <div class="arrow">
+        <span><%= image_tag 'arrow_top.png',size: "16x16" %></span>
+     <ul class="more_list" >
+            <li>
+              <%= link_to '編集', edit_topic_path(topic.id), method: :get %>
+            </li>
+            <li>
+              <%= link_to '削除', topic_path(topic.id), method: :delete %>
+            </li>
+        </ul>
+   </div>
 </div>
+      <% end %> 
+</div>
+
+        

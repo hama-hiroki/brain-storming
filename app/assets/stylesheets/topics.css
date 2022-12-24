@@ -2,7 +2,7 @@
   display: flex;
 }
 .side-bar {
-  background-color: rgb(16, 9, 63);
+  
   width: 300px;
   height: 100vh;
 }
@@ -29,7 +29,6 @@
   text-decoration: none;
 }
 .topics {
-  background-color: rgb(3, 19, 28);
   height: calc(100vh - 100px);
   padding: 0 20px;
   overflow: scroll;
@@ -37,11 +36,14 @@
 
 .topic {
   padding: 20px 0 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .topic-name a {
   text-decoration: none;
-  color: white;
+  color: black;
+
 }
 .main {
   background-color: #FFFFFF;
@@ -87,8 +89,6 @@
   font-size: 14px;
   margin-bottom: 40px;
 }
-
-
 
 .chat-room-form {
   width: 980px;

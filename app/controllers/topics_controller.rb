@@ -2,7 +2,7 @@ class TopicsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @topics = Topic.all
+    @topics = Topic.includes(:user).order("created_at DESC")
   end
 
   def new
@@ -10,7 +10,10 @@ class TopicsController < ApplicationController
   end
 
   def create
-    Topic.create(topic_params)
+    @topic = Topic.create(topic_params)
+    @topic.save
+    redirect_to action: :index
+  
   end
 
   def edit
@@ -23,6 +26,7 @@ class TopicsController < ApplicationController
   def destroy
     topic = Topic.find(params[:id])
     topic.destroy
+    redirect_to action: :index
   end
 
   def show
