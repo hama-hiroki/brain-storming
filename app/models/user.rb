@@ -8,4 +8,5 @@ class User < ApplicationRecord
          validates :first_name, presence: true
 
          has_many :topics
+         has_many :items
 end
