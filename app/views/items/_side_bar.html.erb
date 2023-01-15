@@ -16,13 +16,13 @@
 <% @topics.each do |topic| %>
 <div class="topic">
   <div class="topic-name">
-  <p><%= topic.topic_item %></p>   
+       <%= link_to topic.topic_item, topic_items_path(topic) %>
   </div>
    <div class="arrow">
         <span><%= image_tag 'arrow_top.png',size: "16x16" %></span>
      <ul class="more_list" >
             <li>
-              <%= link_to 'item追加', topic_items_path(topic) %>
+              <%= link_to 'item追加', @item %>
             </li>
             <li>
               <%= link_to '編集', edit_topic_path(topic.id), method: :get %>

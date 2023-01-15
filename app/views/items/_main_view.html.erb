@@ -13,29 +13,10 @@
   </div>
 </div>
 
-<div class="items">
- <div class="item">
-   <div class="topics">
-<% @items.each do |item| %>
-<div class="item">
-  <div class="item-name">
-      <p><%= item.item %></p>
+<%= form_with model: [@topic, @item], class: 'form', local: true do |f| %>
+  <div class="form-input">
+    <%= f.text_field :item, class: 'form-message', placeholder: 'type a item' %>
   </div>
-   <div class="arrow">
-        <span><%= image_tag 'arrow_top.png',size: "16x16" %></span>
-     <ul class="more_list" >
-            <li>
-              <%= link_to 'item追加', new_item_path(item.id), method: :post %>
-            </li>
-            <li>
-              <%= link_to '編集', edit_topic_path(topic.id), method: :get %>
-            </li>
-            <li>
-              <%= link_to '削除', topic_path(topic.id), method: :delete %>
-            </li>
-        </ul>
-   </div>
-</div>
-      <% end %> 
-</div>
+  <%= f.submit '送信', class: 'form-submit' %>
+<% end %>
 
