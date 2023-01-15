@@ -1,33 +1,32 @@
-class TopicsController < ApplicationController
+class ItemsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @topics = Topic.includes(:user).order("created_at DESC")
     @items = Item.includes(:user).order("created_at DESC")
   end
 
   def new
-    @topic = Topic.new
+    @item = Item.new
   end
 
   def create
-    @topic = Topic.create(topic_params)
-    @topic.save
+    @item = Item.create(item_params)
+    @item.save
     redirect_to action: :index
-    
+  
   end
 
   def edit
-
+    
   end
 
   def update
-    topic = Topic.find(params[:id])
+    item = Topic.find(params[:id])
   end
 
   def destroy
-    topic = Topic.find(params[:id])
-    topic.destroy
+    item = Topic.find(params[:id])
+    item.destroy
     redirect_to action: :index
   end
 
@@ -35,12 +34,8 @@ class TopicsController < ApplicationController
   end
 
   private
-  def topic_params
-    params.permit(:topic_item).merge(user_id: current_user.id)
-  end
-
   def item_params
-    params.permit(:item)
+    params.permit(:item).merge(user_id: current_user.id)
   end
 
   def move_to_index
@@ -48,5 +43,4 @@ class TopicsController < ApplicationController
       redirect_to action: :index
     end
   end
-  
 end

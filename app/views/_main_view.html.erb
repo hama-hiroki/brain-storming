@@ -1,0 +1,41 @@
+<div class="main-header">
+<div class="left-header">
+    <div class="header-title">
+      Brain Storming
+    </div>
+  </div>
+  <div class="right-header">
+  <% if user_signed_in? %>
+    <div class="header-button">
+    <%= link_to "BMを終了する", destroy_user_session_path, method: :delete %>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="items">
+ <div class="item">
+   <div class="topics">
+<% @items.each do |item| %>
+<div class="item">
+  <div class="item-name">
+      <p><%= item.item %></p>
+  </div>
+   <div class="arrow">
+        <span><%= image_tag 'arrow_top.png',size: "16x16" %></span>
+     <ul class="more_list" >
+            <li>
+              <%= link_to 'item追加', new_item_path(item.id), method: :post %>
+            </li>
+            <li>
+              <%= link_to '編集', edit_topic_path(topic.id), method: :get %>
+            </li>
+            <li>
+              <%= link_to '削除', topic_path(topic.id), method: :delete %>
+            </li>
+        </ul>
+   </div>
+</div>
+      <% end %> 
+</div>
+

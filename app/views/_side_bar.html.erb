@@ -22,6 +22,9 @@
         <span><%= image_tag 'arrow_top.png',size: "16x16" %></span>
      <ul class="more_list" >
             <li>
+              <%= link_to 'item追加', @item %>
+            </li>
+            <li>
               <%= link_to '編集', edit_topic_path(topic.id), method: :get %>
             </li>
             <li>
